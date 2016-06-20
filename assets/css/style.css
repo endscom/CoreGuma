@@ -1,0 +1,775 @@
+html{
+  background: url('/CoreGuma/assets/img/fondo-corguma.jpg');
+
+}
+#BSalir{
+  margin-top: 12px;
+  background: rgba(255,255,255,0);
+  border:none;
+
+}
+#add{
+  background: #00658E;
+  color: #fff;
+  border-radius: 25px;
+   font-family:  'robotomedium';
+  font-weight: 500;
+  margin-bottom: 35px;
+}
+#Moneda{
+  font-family:  'robotomedium';
+  font-weight: 500;
+  font-size: 15px;
+  color: #575756;
+}
+#Btns{
+  margin-left: 20px;
+}
+#open{
+  margin-left: 45%;
+}
+#doc{
+  margin-left: -70px;
+}
+#Yes{
+  
+   font-family:  'robotobold';
+  font-weight: 500;
+  margin-top: 50px;
+ 
+  color: #00658e;
+
+}
+#iconos1{
+  margin-top:-30px;
+}
+#Can{
+ 
+   font-family:  'robotobold';
+  font-weight: 500;
+  margin-top: 50px;
+  color: red;
+
+}
+#atras{
+  border-radius: 25px;
+   font-family:  'robotomedium';
+  font-weight: 500;
+  margin-top: 50px;
+
+}
+.fondo{
+  background: url('/CoreGuma/assets/img/fondo-corguma.jpg');
+}
+@font-face {
+    font-family: 'robotoblack';
+    src: url('/CoreGuma/assets/font/Robot/roboto-black-webfont.eot');
+    src: url('/CoreGuma/assets/font/Robot/roboto-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/CoreGuma/assets/font/Robot/roboto-black-webfont.woff2') format('woff2'),
+         url('/CoreGuma/assets/font/Robot/roboto-black-webfont.woff') format('woff'),
+         url('/CoreGuma/assets/font/Robot/roboto-black-webfont.ttf') format('truetype'),
+         url('/CoreGuma/assets/font/Robot/roboto-black-webfont.svg#robotoblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'robotobold';
+    src: url('/CoreGuma/assets/font/Robot/roboto-bold-webfont.eot');
+    src: url('/CoreGuma/assets/font/Robot/roboto-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/CoreGuma/assets/font/Robot/roboto-bold-webfont.woff2') format('woff2'),
+         url('/CoreGuma/assets/font/Robot/roboto-bold-webfont.woff') format('woff'),
+         url('/CoreGuma/assets/font/Robot/roboto-bold-webfont.ttf') format('truetype'),
+         url('/CoreGuma/assets/font/Robot/roboto-bold-webfont.svg#robotobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'robotomedium';
+    src: url('/CoreGuma/assets/font/Robot/roboto-medium-webfont.eot');
+    src: url('/CoreGuma/assets/font/Robot/roboto-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/CoreGuma/assets/font/Robot/roboto-medium-webfont.woff2') format('woff2'),
+         url('/CoreGuma/assets/font/Robot/roboto-medium-webfont.woff') format('woff'),
+         url('/CoreGuma/assets/font/Robot/roboto-medium-webfont.ttf') format('truetype'),
+         url('/CoreGuma/assets/font/Robot/roboto-medium-webfont.svg#robotomedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'robotoregular';
+    src: url('/CoreGuma/assets/font/Robot/roboto-regular-webfont.eot');
+    src: url('/CoreGuma/assets/font/Robot/roboto-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/CoreGuma/assets/font/Robot/roboto-regular-webfont.woff2') format('woff2'),
+         url('/CoreGuma/assets/font/Robot/roboto-regular-webfont.woff') format('woff'),
+         url('/CoreGuma/assets/font/Robot/roboto-regular-webfont.ttf') format('truetype'),
+         url('/CoreGuma/assets/font/Robot/roboto-regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/*.first paginate_button paginate_button_disabled*/
+#back{
+  color:#fff;
+   background-color:#00658F;
+   border-radius: 25px;
+   font-family: 'robotomedium';
+  font-weight: 500;
+   margin-left: 25px;
+ }
+ #back1{
+  color:#fff;
+   background-color:#115640;
+   border-radius: 25px;
+   font-family: 'robotomedium';
+  font-weight: 500;
+   margin-left: 25px;
+ }
+ #back2{
+  color:#fff;
+   background-color:#7D2082;
+   border-radius: 25px;
+   font-family: 'robotomedium';
+  font-weight: 500;
+  margin-left: 25px;
+ }
+ #back3{
+  color:#fff;
+   background-color:#253778;
+   border-radius: 25px;
+   font-family: 'robotomedium';
+  font-weight: 500;
+   margin-left: 25px;
+ }
+#pdf{
+  color:#fff;
+   background-color:#00658F;
+   border-radius: 25px;
+   font-family: 'robotomedium';
+  font-weight: 500;
+    margin-left: 70%;
+ }
+ #pdf1{
+  color:#fff;
+   background-color:#115640;
+   border-radius: 25px;
+   font-family: 'robotomedium';
+  font-weight: 500;
+    margin-left: 70%;
+ }
+
+#pdf2{
+  color:#fff;
+   background-color:#7D2082;
+   border-radius: 25px;
+   font-family: 'robotomedium';
+  font-weight: 500;
+  margin-left: 70%;
+ }
+ #pdf3{
+  color:#fff;
+   background-color:#253778;
+   border-radius: 25px;
+   font-family: 'robotomedium';
+  font-weight: 500;
+    margin-left: 70%;
+ }
+#TblveditCuenta thead th{
+  background-color: #00658E;
+   
+}
+#TblveditCuenta  {
+
+  text-align: center;
+  font-size: 12px;
+  color: #fff;
+   
+ 
+}
+#TCordoba {
+  background-color: #00658E;
+  color: #fff;
+   font-family: 'robotomedium';
+  font-weight: 500;
+}
+
+#TCordoba1 {
+  background-color: #115640;
+  color: #fff;
+   font-family: 'robotomedium';
+  font-weight: 500;
+}
+
+#TCordoba2 {
+  background-color: #7d2082;
+  color: #fff;
+   font-family: 'robotomedium';
+  font-weight: 500;
+}
+#TCordoba3 {
+  background-color: #253778;
+  color: #fff;
+   font-family: 'robotomedium';
+  font-weight: 500;
+}
+
+#TblFood{
+  background-color: #00658E;
+  color: #fff;
+   font-family: 'robotomedium';
+  font-weight: 500;
+}
+#TblFood1{
+  background-color: #115640;
+  color: #fff;
+   font-family: 'robotomedium';
+  font-weight: 500;
+}
+#TblFood2{
+  background-color: #7D2082;
+  color: #fff;
+   font-family: 'robotomedium';
+  font-weight: 500;
+}
+#TblFood3{
+  background-color: #253778;
+  color: #fff;
+   font-family: 'robotomedium';
+  font-weight: 500;
+}
+#Collap{
+  font-family: 'robotomedium';
+  font-weight: 500;
+  font-size: 20px;
+}
+#ingresoDolar
+  {
+  text-align: center;
+  font-size: 14px;
+  color:#575756;
+
+}
+#tblid_vista_detalles thead th
+{
+  background-color: #00658E;
+  color: #fff;
+  font-size: 12px;
+}
+#tblid_vista_detalles tbody 
+{
+  font-family:  'robotomedium';
+  font-weight: 500;
+  font-size: 12px;
+   color: #575756;
+
+}
+#TblUMA thead th
+{
+  background:#115640;
+  color: #fff;
+  font-size: 12px;
+}
+#TblUMA tbody 
+{
+  font-family:  'robotomedium';
+  font-weight: 500;
+  font-size: 12px;
+   color: #575756;
+
+}
+
+#TblInnova thead th
+{
+  background:#7D2082;
+  color: #fff;
+  font-size: 12px;
+}
+#TblInnova tbody 
+{
+  font-family:  'robotomedium';
+  font-weight: 500;
+  font-size: 12px;
+   color: #575756;
+
+}
+#TblveditCuenta thead th
+{
+  background:#00658e;
+  color: #fff;
+  font-size: 18px;
+}
+#TblveditCuenta tbody 
+{
+  font-family:  'robotomedium';
+  font-weight: 500;
+  font-size: 14px;
+   color: #575756;
+
+}
+#TblAglosa thead th
+{
+  background:#253778;
+  color: #fff;
+  font-size: 12px;
+}
+#TblAglosa tbody 
+{
+  font-family:  'robotomedium';
+  font-weight: 500;
+  font-size: 12px;
+   color: #575756;
+
+}
+
+#ChipT{
+  font-family:  'robotomedium';
+  font-weight: 500;
+}
+
+#TblUMAD thead th
+{
+  background: #115640;
+  color: #fff;
+  font-size: 12px;
+}
+#TblUMAD 
+{
+  /*border-collapse: separate;*/
+  margin-top: 25px;
+  color: #fff;
+}
+#TblUMAD tbody 
+{
+  font-family:  'robotomedium';
+  font-weight: 500;
+  font-size: 12px;
+  color: #575756;
+  border-top: 1px solid #ddd;
+
+}
+#TblInnovaD thead th
+{
+  background: #7D2082;
+  color: #fff;
+  font-size: 12px;
+}
+#TblInnovaD 
+{
+  /*border-collapse: separate;*/
+  margin-top: 25px;
+  color: #fff;
+}
+#TblInnovaD tbody 
+{
+  font-family:  'robotomedium';
+  font-weight: 500;
+  font-size: 12px;
+  color: #575756;
+  border-top: 1px solid #ddd;
+
+}
+#TblUMAD tbody 
+{
+  font-family:  'robotomedium';
+  font-weight: 500;
+  font-size: 12px;
+  color: #575756;
+  border-top: 1px solid #ddd;
+
+}
+#TblAglosaD thead th
+{
+  background: #253778;
+  color: #fff;
+  font-size: 12px;
+
+}
+#TblAglosaD 
+{
+  /*border-collapse: separate;*/
+  margin-top: 25px;
+  color: #fff;
+}
+#TblAglosaD tbody 
+{
+  font-family:  'robotomedium';
+  font-weight: 500;
+  font-size: 12px;
+  color: #575756;
+  border-top: 1px solid #ddd;
+
+}
+.card1{
+  margin-top: 35px;
+}
+#DetalleCuenta{
+  margin-top: 40px;
+  margin-left: 30px;
+}
+#actualizar{
+  margin-top: 25px;
+  color:#00658F; font-weight:bold; text-align: right; font-style: italic; 
+
+}
+#actualizar1{
+  margin-top: 25px;
+  color:#115640; font-weight:bold; text-align: right; font-style: italic; 
+}
+#actualizar2{
+  margin-top: 25px;
+  color:#7d2082; font-weight:bold; text-align: right; font-style: italic; 
+}
+#actualizar3{
+  margin-top: 25px;
+  color:#253778; font-weight:bold; text-align: right; font-style: italic; 
+}
+#tblid_vista_detalles_dolares 
+{
+  margin-top: 30px;
+  
+
+}
+#tblid_vista_detalles_dolares thead th
+{
+  margin-top: 25px;
+  background: #00658E;
+  color: #fff;
+  font-size: 12px;
+
+}
+#tblid_vista_detalles_dolares tbody td
+{
+  
+  border-top: 1px solid #ddd;
+
+}
+#tblid_vista_detalles_dolares 
+{
+  
+  border-top: 1px solid #ddd;
+  font-family:  'robotomedium';
+   font-weight: 500;
+  font-size: 12px;
+  color: #575756;
+  border-top: 1px solid #ddd;
+
+}
+
+#TblMasterMov 
+{
+  margin-top: 30px;
+  
+
+}
+
+
+#TblMasterMov 
+{
+  
+  border-top: 1px solid #ddd;
+  font-family:  'robotomedium';
+   font-weight: 500;
+  font-size: 15px;
+  color: #575756;
+  border-top: 1px solid #ddd;
+  
+
+}
+
+#Cordoba{
+   font-family:  'robotoblack';
+   font-size: 15px;
+   font-weight: 500;
+    color: #575756;
+}
+
+#Dolar
+{
+   font-family:  'robotoblack';
+   font-size: 15px;
+   font-weight: 500;
+   color: #575756;
+}
+
+#ingresoDolar thead th, #ingresoCordoba thead th, #TblveditCuenta thead th, #TblvBandejaFormatos thead th,
+#tblid_vista_detalles thead th, #TblUMAD thead th,#TblUMA thead th,#TblInnova thead th, #TblAglosa thead th,#TblAglosaD thead th,
+ #tblid_vista_detalles_dolares thead th
+{
+
+  font-family: 'robotomedium';
+  font-weight: 500;
+}
+#ingresoCordoba thead
+{
+  text-align: center;
+  font-size: 12px;
+  font-family: 'robotomedium';
+  background-color: #00658E;
+  color: #fff;
+   
+}
+#ingresoDolar thead
+{
+  text-align: center;
+  font-size: 12px;
+  font-family: 'robotomedium';
+  background-color: #00658E;
+  color: #fff;
+   
+}
+#TblvBandejaFormatos thead
+{
+  background: #00658E;
+  color: #fff;
+}
+#TblMasterMov thead  th
+{
+  background: #00658E;
+  color: #fff;
+}
+
+#TblvBandejaFormatos
+{
+  text-align: center;
+  font-size: 14px;
+  font-family: 'robotomedium';
+   color:#575756;
+}
+
+#ingresoCordoba
+{
+  text-align: center;
+  font-size: 14px;
+  font-family: 'robotomedium';
+   color:#575756;
+}
+#Texto{
+  font-family: 'robotoblack';
+  font-size: 35px;
+}
+.Texto1{
+  font-family: 'robotoblack';
+  font-size: 16px;
+}
+#text1{
+   font-family: 'robotomedium';
+   font-size: 16px;
+   font-weight: 500;
+}
+#bancImagen{
+  margin-left: 73%;
+  margin-bottom: -30px;
+}
+#logo2{
+margin-right: 
+}
+#formAddNewRow{
+  margin-top: 30px;
+}
+.Texto span{
+  font-weight: bold;
+}
+#BtnSalir{
+  background-color: #00658E;
+  border-radius: 20px;
+  font-family: 'robotomedium';
+   
+   font-weight: 500;
+}
+ .cuenta{
+  font-weight: bold;
+}
+#TblMaster_paginate{
+	display: none;
+}
+.dataTables_info{display: none;}
+
+#TblMaster{
+	font-size: 15px; 	
+}
+#TblMaster tr:nth-child(even) {
+    background-color: #FDEAD1;
+}
+ 
+#TblMaster tr:nth-child(odd) {
+    background-color: #FFFBDD;
+}
+
+ #TblveditCuenta tr:nth-child(even) {
+    background-color: #FDEAD1;
+}
+ .Tcolor{
+  font-family: 'robotomedium';
+  color:#575756; 
+ }
+#TblveditCuenta tr:nth-child(odd) {
+    background-color: #FFFBDD;
+}
+tbody.Tcolor tr:nth-child(even) {
+    background-color: #FDEAD1;
+}
+ 
+tbody.Tcolor tr:nth-child(odd) {
+    background-color: #FFFBDD;
+}
+.LinBtn{
+  margin-top: 35px;
+}
+
+#TblMasterMov tr:nth-child(even) {
+    background-color: #FDEAD1;
+}
+
+ 
+#TblMasterMov tr:nth-child(odd) {
+    background-color: #FFFBDD;
+}
+
+ body {
+
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+nav  img{
+  width: 120px;
+}
+.header{
+    margin-top: 40px;
+}
+.card-panel-login{
+  width: 500px;
+  height: 400px;
+  margin-left: 20%;
+}
+.card-panel-login img{
+  width: 100px;
+}
+.btn{
+    /*background-color: #3e984c;*/
+    
+}
+
+ .centro p{
+     margin-top: 20px;
+     text-align: center;
+     /* position: absolute;
+     margin: 0 auto;*/
+}
+#TDispo
+{
+  font-family: 'robotoblack';
+  color:#575756; 
+  font-size: 35px;
+  font-weight:bold; 
+  margin: 2rem 0 0.912rem 0;
+}
+
+.error{
+    color: rgba(255, 150, 0, 0.91);
+    font-size: 18px;
+}
+#name{
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+#pass{
+     letter-spacing: 4px;
+}
+
+.btns{
+  text-align: left;
+}
+#guardar{
+  background: #00658E;
+  border-radius: 20px;
+}
+#guardar1{
+  background: #00658E;
+  border-radius: 20px;
+  margin-left: 15px;
+}
+
+
+ul >  li {
+  list-style-type:none;
+  text-align:center;
+  
+}
+ul >  li > img{
+  
+vertical-align: middle;
+  
+}
+/*
+table.display tr.odd.row_selected td {
+    background-color: #9FAFD1;
+}*/
+.numeric{  
+  text-align:center;
+}
+
+/*td, th {
+    text-align: center;
+    vertical-align: middle;    
+    font-size: 12px;
+}
+#tblid_vista_detalles, .tableizer-firstrow{
+  border: 1px solid black;
+
+}*/
+
+
+
+
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+
+  
+.datos{
+    text-align: center;
+}
+
+.datos thead th{
+    background-color: #29317f;
+    color: #ffffff;
+     font-size: 12px;
+    
+}
+.datos th,td, tr{
+    text-align: center;
+
+}
+
+ .datos tbody tr {
+    background-color: #BEEDFF;
+    font-size: 12px;
+     font-weight: bold;
+
+}
