@@ -15,10 +15,12 @@ $route['CrearFormato'] = 'Bancos_controller/IngresarInfo';
 $route['GuardarFormato'] = 'Bancos_controller/SaveBank';
 $route['UpdateFormato'] = 'Bancos_controller/Updatebanco';
 $route['AjaxEmpre'] = 'Bancos_controller/IngxEmpre';
-$route['VerF/(:any)'] = 'Bancos_controller/ViewFormato/$1';
+//$route['VerF/(:any)'] = 'Bancos_controller/ViewFormato/$1';
 $route['Detalles/(:any)/(:any)'] = 'Bancos_controller/View_detalles/$1/$2';
 /*DETALLES POR EMPRESA*/
 //UMA
+$route['DetallesUNI/(:any)/(:any)'] = 'Bancos_controller/View_detallesUNI/$1/$2';
+
 $route['DetallesUma/(:any)/(:any)'] = 'Bancos_controller/View_detallesUMA/$1/$2';
 $route['DetallesUmavet/(:any)/(:any)'] = 'Bancos_controller/View_detallesUmaVet/$1/$2';
 $route['DetallesInnova/(:any)/(:any)'] = 'Bancos_controller/View_detallesInnova/$1/$2';
@@ -26,6 +28,7 @@ $route['DetallesAglosa/(:any)/(:any)'] = 'Bancos_controller/View_detallesAglosa/
 
 
 //Detalles Por Contador
+$route['VerUNI/(:any)'] = 'Bancos_controller/ViewFormatoUNI/$1';
 $route['VerUMA/(:any)'] = 'Bancos_controller/ViewFormatoUMA/$1';
 $route['VerUMV/(:any)'] = 'Bancos_controller/ViewFormatoUMV/$1';
 $route['VerInn/(:any)'] = 'Bancos_controller/ViewFormatoInn/$1';

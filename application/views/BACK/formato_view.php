@@ -37,20 +37,18 @@
 		</div>
             <div class="row" >
             	
-            	<div class="col s2">
-			        	<a  id="back" href="<?php echo base_url()?>/index.php/dashboard" class="waves-effect waves-light btn" >REGRESAR</a>
-			        </div>
-            		<div class="col s2 offset-s7">
+               <div class="col s1">
 			        	 <a onclick="generarPdf();" id="pdf" class="waves-effect waves-light btn" >PDF</a>
-			        	 
-			        </div>
-			        
-            	
+			   </div>
             </div>
         
         <br>
 		<table id="tblid_vista_detalles" class="table bordered hover  display" >
 			<thead >
+				 <tr>
+				 	<th id="Cordoba"colspan="13">C&Oacute;RDOBAS</th>					
+				</tr>
+				
 				<tr >
 					<th>CUENTA</th>
 					<th>MONEDA</th>
@@ -66,12 +64,11 @@
 					<th>DEPOSITOS NO DISPONIBLES</th>
 					<th>DISPONIBLE REAL AL <br><?php echo substr($MTMV[0]['FechaM'], 0,10); ?></th>
 				</tr>
+
 			</thead>
 			<tbody>
 				 
-				 <tr>
-				 	<td id="Cordoba"colspan="13">C&Oacute;RDOBAS</td>					
-				</tr>
+				
 				<?php
 				if (!($MTMV)) {
 					$TSaldoLAC[] 	= "";
@@ -169,6 +166,7 @@
 				<tr>
 					<table id="tblid_vista_detalles_dolares"  class="table bordered hover  display" >
 						<thead>
+							<tr><th colspan="13" id="Dolar">D&Oacute;LARES </th></tr>
 							<tr>
 								<th>CUENTA</th>
 								<th>MONEDA</th>
@@ -184,7 +182,7 @@
 								<th>DEPOSITOS NO DISPONIBLES</th>
 								<th>DISPONIBLE REAL AL <br><?php echo substr($MTMV[0]['FechaM'], 0,10); ?></th>	
 							</tr>
-							<tr><td colspan="13" id="Dolar">D&Oacute;LARES </td></tr>
+							
 						</thead>
 						<tbody>
 							

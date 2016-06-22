@@ -82,7 +82,7 @@
 
                                                                   <td>".date('d/m/Y',strtotime(substr($key['FechaM'], 0,10)))."</td>
                                                                   <td>".
-                                                                  (($key['UNIMARK']==1) ? "<a target='_blank' href='".base_url("index.php/Detalles/".$key['Id1']."/".date('Y-m-d',strtotime(substr($key['FechaM'], 0,10)))."")."'>
+                                                                  (($key['UNIMARK']==1) ? "<a target='_blank' href='".base_url("index.php/DetallesUNI/".$key['Id1']."/".date('Y-m-d',strtotime(substr($key['FechaM'], 0,10)))."")."'>
                                                                     <i class='green-text text-darken-3 small material-icons'>&#xE5CA;</i></a>" : '<i class="red-text text-darken-3 small material-icons">&#xE5CD;</i>')."
                                                                   </td>
                                                                   <td>".

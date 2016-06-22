@@ -24,12 +24,14 @@ class Bancos_modal extends CI_Model
         $this->db->where('IdDB', $P1);
         $this->db->where('FechaM', $P2);
         $this->db->where('Tipo', $P3);
-        $query = $this->db->get('movimientos');        
-      if($query->num_rows() <> 0){            
-            return $query->result_array();
+        $query = $this->db->get('movimientos');
+               //print_r($query->result_array());  
+      if($query->num_rows() <> 0){    
+             
+           return $query->result_array();
         }
         return 0;
-        //print_r($query->result_array());
+        
     }
     public function DetalleCuenta($P1){
         
@@ -82,11 +84,15 @@ class Bancos_modal extends CI_Model
         return 0;
     }
 	public function allbnk(){        
-        $this->db->where('IdUS', $_SESSION['IdUS']);
-        $this->db->or_where('IdEM', $_SESSION['SlpEmpresa']); 
-        $this->db->order_by('FechaM','desc');
-        $query = $this->db->get('View_movimiento');        
+        $this->db->where('IdUS', $_SESSION['IdUS']); 
+
+        //$this->db->or_where('IdEM', $_SESSION['SlpEmpresa']); 
+        $this->db->order_by('FechaM', 'desc');
+        $query = $this->db->get('View_movimiento');  
+
+
         if($query->num_rows() <> 0){            
+           //print_r($query->result_array());
             return $query->result_array();
         }
         return 0;

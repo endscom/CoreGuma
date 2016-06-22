@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Administrador de plataforma Financiera</title>
-    <link link rel="shortcut icon" href="<?php echo baseurl();?>assets/img/dweb.png" type="image/png">
+    <link rel="shortcut icon" href="<?php echo base_url(); ?>assets/img/dweb.png" />
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="<?php echo base_url(); ?>assets/css/materialize.css"  media="screen,projection"/>

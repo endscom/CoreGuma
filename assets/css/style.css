@@ -2,6 +2,18 @@ html{
   background: url('/CoreGuma/assets/img/fondo-corguma.jpg');
 
 }
+#TblveditCuenta_length{
+  display: none;
+}
+#TblveditCuenta_previous{
+  display: none;
+}
+#TblveditCuenta_next{
+  display: none;
+}
+#TblMasterMov_length{display: none;}
+#TblMasterMov_previous{display: none;}
+#TblMasterMov_next{display: none;}
 #BSalir{
   margin-top: 12px;
   background: rgba(255,255,255,0);
@@ -36,8 +48,9 @@ html{
    font-family:  'robotobold';
   font-weight: 500;
   margin-top: 50px;
- 
-  color: #00658e;
+ background: #00658e;
+  color: #fff;
+  border-radius: 25px;
 
 }
 #iconos1{
@@ -45,10 +58,11 @@ html{
 }
 #Can{
  
+  color: #fff;
    font-family:  'robotobold';
   font-weight: 500;
   margin-top: 50px;
-  color: red;
+  border-radius: 25px;
 
 }
 #atras{
@@ -143,6 +157,7 @@ html{
    margin-left: 25px;
  }
 #pdf{
+  margin-bottom: 20px;
   color:#fff;
    background-color:#00658F;
    border-radius: 25px;
@@ -151,6 +166,7 @@ html{
     margin-left: 70%;
  }
  #pdf1{
+  margin-bottom: 20px;
   color:#fff;
    background-color:#115640;
    border-radius: 25px;
@@ -160,6 +176,7 @@ html{
  }
 
 #pdf2{
+  margin-bottom: 20px;
   color:#fff;
    background-color:#7D2082;
    border-radius: 25px;
@@ -168,6 +185,7 @@ html{
   margin-left: 70%;
  }
  #pdf3{
+  margin-bottom: 20px;
   color:#fff;
    background-color:#253778;
    border-radius: 25px;
@@ -443,6 +461,7 @@ html{
   
   border-top: 1px solid #ddd;
 
+
 }
 #tblid_vista_detalles_dolares 
 {
@@ -476,21 +495,75 @@ html{
   
 
 }
-
-#Cordoba{
-   font-family:  'robotoblack';
-   font-size: 15px;
+/*innova*/
+#Cordoba4{
+  background: #7D2082;
+   font-family:  'robotomedium';
+   font-size: 20px;
    font-weight: 500;
-    color: #575756;
+    color: #fff;
+}
+/*umavet uma*/
+#Cordoba2{
+  background: #115640;
+   font-family:  'robotomedium';
+   font-size: 20px;
+   font-weight: 500;
+    color: #fff;
+}
+/* aglosa*/
+#Cordoba3{
+  background: #253778;
+   font-family:  'robotomedium';
+   font-size: 20px;
+   font-weight: 500;
+    color: #fff;
 }
 
-#Dolar
+#Cordoba{
+   background: #00658E;
+   font-family:  'robotomedium';
+   font-size: 20px;
+   font-weight: 500;
+    color: #fff;
+}
+
+#Dolar 
 {
    font-family:  'robotoblack';
-   font-size: 15px;
+   font-size: 20px;
    font-weight: 500;
    color: #575756;
 }
+/*uma y umavet*/
+#Dolar2 
+{
+  background: #115640;
+   font-family:  'robotomedium';
+   font-size: 20px;
+   font-weight: 500;
+    color: #fff;
+}
+
+/*innova*/
+#Dolar3 
+{
+  background: #7D2082;
+   font-family:  'robotomedium';
+   font-size: 20px;
+   font-weight: 500;
+    color: #fff;
+}
+/*Aglosa*/
+#Dolar4
+{
+  background: #253778;
+   font-family:  'robotomedium';
+   font-size: 20px;
+   font-weight: 500;
+    color: #fff;
+}
+
 
 #ingresoDolar thead th, #ingresoCordoba thead th, #TblveditCuenta thead th, #TblvBandejaFormatos thead th,
 #tblid_vista_detalles thead th, #TblUMAD thead th,#TblUMA thead th,#TblInnova thead th, #TblAglosa thead th,#TblAglosaD thead th,
@@ -581,7 +654,7 @@ margin-right:
   font-weight: bold;
 }
 #TblMaster_paginate{
-	display: none;
+	 none;
 }
 .dataTables_info{display: none;}
 

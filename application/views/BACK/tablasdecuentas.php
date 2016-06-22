@@ -4,35 +4,14 @@
     <div class="row">
         <div class="col s12">
           <div class="card">
-            <h5 class="center Texto"><br>CUENTAS BANCARIAS</h5>
+            <h5 class="center Texto"><br>CUENTAS BANCARIAS</h5><br><br>
             <div class="card-content">
               <div class="row">
               
-              
-               <!--<div>
-               <form id="formAddNewRow" action="#" title="Add a new browser" style="width:600px;min-width:600px">                  
-                  <input placeholder="Cuenta" name="Cuenta" id="Cuenta" type="text" class="required" rel="0" style="width:260px;">                 
-                    <div class="input-field col s12">
-                      <select class="browser-default" name="Moneda" id="Moneda" style="width:260px;" rel="1" class="required">
-                        <option value="Cordoba">Cordoba</option>
-                        <option value="Dolares">Dolares</option>                        
-                      </select>          
-                    </div>
-                       
-                    <div class="input-field col s12">
-                      <select class="browser-default" name="Banco" id="Banco" style="width:260px;" rel="2" class="required">
-                        <option value="BAC">BAC</option>
-                        <option value="LAFISE">LAFISE</option>                        
-                        <option value="BANPRO">BANPRO</option>
-                      </select>          
-                    </div>                        
-                  
-                </form>
-                </div>-->
                 <a id="BtnSalir" class="right waves-effect waves-light btn " href="<?php echo base_url('index.php/Bandeja');?>">ATRÁS</a>
                 <a id="add"class="waves-effect waves-light btn modal-trigger" href="#modal1">Agregar</a>
 
-                      <div id="modal1" class="modal top-sheet">
+                      <div id="modal1" class="modal ">
                           <div class="modal-content">
                               <h4 class="Texto3 center">NUEVA CUENTA</h4>
 
@@ -68,10 +47,10 @@
                               <div id="iconos1" class="row">
                                  
                                   <div class="col s2 offset-s4">
-                                      <a href="#!" id="Can"class=" modal-action modal-close waves-effect ">Cancelar</a>
+                                      <a href="#!" id="Can"class=" modal-action modal-close waves-effect btn red">Cancelar</a>
                                   </div>
-                                  <div class="col s2">
-                                      <a href="#!" id="Yes"class=" modal-action  waves-effect" onclick="cuenta()">Aceptar</a>
+                                  <div class="col s3">
+                                      <a href="#!" id="Yes"class=" modal-action  waves-effect btn" onclick="cuenta()">Aceptar</a>
                                   </div>
                              
                               </div>

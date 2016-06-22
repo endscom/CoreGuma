@@ -126,9 +126,11 @@ table.ingreso thead
  .LinBtn{
   margin-top: 20PX;
  }
-
+#TblMaster_next{display: none;}
+#TblMaster_previous{display: none;}
 .dataTables_filter{
-  display: none;
+  /*display: none;*/
+  margin-right: 35px;
 }
 #TblMaster tbody{
   font-size: 15px;
@@ -136,6 +138,7 @@ table.ingreso thead
   font-weight: 500;
 
 }
+
 #TblMaster th{
   background: #00658e;
   color: #fff;

@@ -107,9 +107,9 @@
 </div>
  <div class="center">
   	<button class="btn waves-effect waves-light green" id="" type="submit" class="numeric" >Guardar
-    	<i class="material-icons right">send</i>
+    	
   	</button>
-  	<a class="btn waves-effect waves-light red" href="<?php echo base_url('index.php/Bandeja')?>" ><i class="material-icons left">close</i>cancelar</a>
+  	<a class="btn waves-effect waves-light red" href="<?php echo base_url('index.php/Bandeja')?>" >cancelar</a>
   	
   </div>
   </form>

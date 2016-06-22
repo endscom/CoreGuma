@@ -3,16 +3,24 @@
  * Created by marangelo on 30/01/2016.
  */
  //INICIALIZARDORES
- 
- $( document ).ready(function(){
- 	//$('#test').DataTable();
- 	 	$('#TblMaster').DataTable();
- 	 	$('.modal-trigger').leanModal();
+ $(document).ready(function() {
+    $('#TblMaster').DataTable(
+    	{
+        	"aaSorting": [[ 1, "desc" ]]
+    	}
+      
+     );
+
+
+         $('.modal-trigger').leanModal();
+
  	 	 $('select').material_select();
  	 	 	
  	 	
 
  	$('#tbl_detalles').DataTable();
+ 	$('#TblveditCuenta').DataTable();
+ 	$('#TblMasterMov').DataTable();
  	$('#tblid_vista_detalles').DataTable();
  	$('#tblid_vista_detalles_dolares').DataTable();
  	/******************/
@@ -27,8 +35,19 @@
 			$("#datos_a_enviar").val( $("<div>").append( $("#tblfinal").eq(0).clone()).html());
 			$("#FormularioExportacion").submit();
 		});
-} );
 
+
+
+
+} );
+ 
+
+function eliminar(id)
+{	alert("jaksjdsakdjsa");
+	//document.getElementById("del").value=id;
+	$('#modal2').openModal();
+} 
+ 
 function toTimestamp(strDate){
    var datum = Date.parse(strDate);
    return datum/1000;
@@ -37,15 +56,19 @@ function cuenta()
 {
 	document.frmadd.submit() 
 }
+
 function MovDetalle(idCuenta,Fecha,TIPO){	
 	var opciones="toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=1, resizable=no";	
-	window.open("DetalleMovimiento/"+idCuenta+"/"+Fecha+"/"+TIPO,"",opciones); 	
+	window.open("../DetalleMovimiento/"+idCuenta+"/"+Fecha+"/"+TIPO,"",opciones);
+
 }
-function MovDetalleCnt(idCuenta,Fecha,TIPO){		
+function MovDetalleCnt(idCuenta,Fecha,TIPO){	
+
 	var opciones="toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=1, resizable=no";	
 	window.open("../DetalleMovimiento/"+idCuenta+"/"+Fecha+"/"+TIPO,"",opciones); 	
 }
-function detalles_view(idCuenta,Fecha,TIPO){		
+function detalles_view(idCuenta,Fecha,TIPO){	
+	
 	var opciones="toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=1, resizable=no";	
 	window.open("../../DetalleMovimiento/"+idCuenta+"/"+Fecha+"/"+TIPO,"",opciones); 	
 }

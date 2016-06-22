@@ -21,7 +21,7 @@ class Bancos_controller extends CI_Controller {
     
     public function pdf(){    
        
-        $mPDF = new mPDF('utf-8','A4');
+        $mPDF = new mPDF('utf-8','A3');
 
         $fecha=$_POST['fecha'];   
         $Empresas=$_POST['empresa'];    
@@ -47,6 +47,7 @@ class Bancos_controller extends CI_Controller {
         $this->load->view('templates/header_home');
         $this->load->view('templates/dashboardclean_View');
         $Empresa= $_SESSION['SlpEmpresa'];
+        //echo $Empresa;
         $data['empresa']=$Empresa;
         $data['AllM']=$this->bancos_modal->allbnk();                    
         $this->load->view('BACK/tabladeformatosdisponibles_view',$data);
@@ -78,8 +79,17 @@ class Bancos_controller extends CI_Controller {
         $data['MTMV'] = $this->bancos_modal->AllMVf($f,$Empresa);    
         $this->load->view('BACK/formato_view',$data);
         $this->load->view('templates/footer');
+    }/**/
+     
+      public function ViewFormatoUNI($f){
+        $this->load->view('templates/header');
+        $this->load->view('templates/dashboardclean_View'); 
+        $Empresa= $_SESSION['SlpEmpresa'];
+        $data['empresa']=$Empresa;
+        $data['MTMV'] = $this->bancos_modal->AllMVf($f,$Empresa);    
+        $this->load->view('BACK/Empresas/UNI_view',$data);
+        $this->load->view('templates/footer');
     }
-    /**/
       public function ViewFormatoUMA($f){
         $this->load->view('templates/header');
         $this->load->view('templates/dashboardclean_View'); 
@@ -116,7 +126,7 @@ class Bancos_controller extends CI_Controller {
         $this->load->view('BACK/Empresas/Aglosa_view',$data);
         $this->load->view('templates/footer');
     }
-    /**/
+   /**/
     public function View_detalles($Empresa,$f){
         $this->load->view('templates/header');
         $this->load->view('templates/dashboardclean_View');    
@@ -126,6 +136,17 @@ class Bancos_controller extends CI_Controller {
         $this->load->view('templates/footer');
     }
     /*Vista por empresa*/
+     
+       public function View_detallesUNI($Empresa,$f){
+        $this->load->view('templates/header');
+        $this->load->view('templates/dashboardclean_View');    
+        $data['empresa']=$Empresa;
+        //echo $Empresa;
+        $data['MTMV'] = $this->bancos_modal->AllMVf($f,$Empresa);    
+        $this->load->view('BACK/Empresas/UNI_view',$data);
+        $this->load->view('templates/footer');
+      }
+
       public function View_detallesUMA($Empresa,$f){
         $this->load->view('templates/header');
         $this->load->view('templates/dashboardclean_View');    
@@ -159,7 +180,7 @@ class Bancos_controller extends CI_Controller {
         $this->load->view('BACK/Empresas/Aglosa_view',$data);
         $this->load->view('templates/footer');
     }
-    /**/
+  /* */
     public function IngxEmpre(){        
         $json = array();
         $json['data'] = $this->bancos_modal->AllMVf($this->input->get('Fe'),$this->input->get('Empr'));    

@@ -48,7 +48,26 @@
                         </tr>
                      </thead>
                      <tbody>
-                        <?php                                  
+                        <?php  
+                        
+
+                         /* if (!($AllM)) {
+                                # code...
+                              } else {
+                                foreach ($AllM as $key) {
+                               
+                                  echo "
+                                    <tr>
+                                       
+                                        <td><a href='".base_url('index.php/VerF/'.substr($key["FechaM"], 0,10).'')."'>".date('d-m-Y',strtotime(substr($key['FechaM'], 0,10)))."</a></td>";
+                                        
+                                  echo "</tr>";
+
+                                    
+
+                                    
+                                }
+                              }  */                               
                               if (!($AllM)) {
                                 # code...
                               } else {
@@ -61,12 +80,8 @@
                                           echo "
                                     <tr>
                                         
-                                        <td><a  href='".base_url('index.php/VerF/'.substr($key["FechaM"], 0,10).'')."'>".substr($key['FechaM'], 0,10)."</a></td>";
-                                        if ((substr($key["FechaM"], 0,10))==date('Y-m-d')) {
-                                         echo "<td><a href='".base_url('index.php/Edit/'.substr($key["FechaM"], 0,10).'')."'> <i class='material-icons'>edit</i></a></td>";
-                                        } else {
-                                          //echo "<td></td>";
-                                        }
+                                        <td><a  href='".base_url('index.php/VerUNI/'.substr($key["FechaM"], 0,10).'')."'>".substr($key['FechaM'], 0,10)."</a></td>";
+                                        
                                   echo "</tr>";
 
                                     $i++;
@@ -77,11 +92,7 @@
                                     <tr>
                                         
                                         <td><a  href='".base_url('index.php/VerUMA/'.substr($key["FechaM"], 0,10).'')."'>".substr($key['FechaM'], 0,10)."</a></td>";
-                                        if ((substr($key["FechaM"], 0,10))==date('Y-m-d')) {
-                                         echo "<td><a href='".base_url('index.php/Edit/'.substr($key["FechaM"], 0,10).'')."'> <i class='material-icons'>edit</i></a></td>";
-                                        } else {
-                                          //echo "<td></td>";
-                                        }
+                                        
                                   echo "</tr>";
 
                                     $i++;
@@ -90,11 +101,7 @@
                                     <tr>
                                         
                                         <td><a  href='".base_url('index.php/VerUMV/'.substr($key["FechaM"], 0,10).'')."'>".substr($key['FechaM'], 0,10)."</a></td>";
-                                        if ((substr($key["FechaM"], 0,10))==date('Y-m-d')) {
-                                         echo "<td><a href='".base_url('index.php/Edit/'.substr($key["FechaM"], 0,10).'')."'> <i class='material-icons'>edit</i></a></td>";
-                                        } else {
-                                          //echo "<td></td>";
-                                        }
+                                       
                                   echo "</tr>";
 
                                     $i++;
@@ -103,11 +110,7 @@
                                     <tr>
                                         
                                         <td><a  href='".base_url('index.php/VerInn/'.substr($key["FechaM"], 0,10).'')."'>".substr($key['FechaM'], 0,10)."</a></td>";
-                                        if ((substr($key["FechaM"], 0,10))==date('Y-m-d')) {
-                                         echo "<td><a href='".base_url('index.php/Edit/'.substr($key["FechaM"], 0,10).'')."'> <i class='material-icons'>edit</i></a></td>";
-                                        } else {
-                                          //echo "<td></td>";
-                                        }
+                                        
                                   echo "</tr>";
 
                                     $i++;
@@ -117,11 +120,7 @@
                                     <tr>
                                         
                                         <td><a  href='".base_url('index.php/VerAglosa/'.substr($key["FechaM"], 0,10).'')."'>".substr($key['FechaM'], 0,10)."</a></td>";
-                                        if ((substr($key["FechaM"], 0,10))==date('Y-m-d')) {
-                                         echo "<td><a href='".base_url('index.php/Edit/'.substr($key["FechaM"], 0,10).'')."'> <i class='material-icons'>edit</i></a></td>";
-                                        } else {
-                                          //echo "<td></td>";
-                                        }
+                                       
                                   echo "</tr>";
 
                                     $i++;
@@ -130,7 +129,7 @@
                                   
                               }
                             }
-                              
+                             
 
                         ?>
 

@@ -28,9 +28,14 @@ $(document).ready(function() {
 		$("#datos_a_enviar").val( $("<div>").append( $("#Exportar_a_Excel").eq(0).clone()).html());
 		$("#FormularioExportacion").submit();
 });
+
 });
 </script>
 <script type="text/javascript" charset="utf-8">
+        $('.modal-trigger').leanModal();
+
+
+
 
     $('#TblveditCuenta').dataTable({         
                     "sPaginationType": "full_numbers"

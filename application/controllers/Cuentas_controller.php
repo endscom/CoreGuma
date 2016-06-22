@@ -16,10 +16,13 @@
 		}
 		public function DetalleMovimiento($Cuenta,$Fecha,$TIPO){
 			
-			$this->load->view('templates/header');
-        	$this->load->view('templates/dashboardclean_View');        
 
-        	$data['Movimientos']=$this->bancos_modal->DetalleMovimiento($Cuenta,$Fecha,$TIPO);        	
+			$this->load->view('templates/header');
+        	$this->load->view('templates/dashboard_View');        
+        	//echo "hello";
+        	$data['Movimientos']=$this->bancos_modal->DetalleMovimiento($Cuenta,$Fecha,$TIPO);
+        	//echo $Cuenta."+00+".$Fecha."+00+".$TIPO;
+
         	$data['InfoCuenta']=$this->bancos_modal->DetalleCuenta($Cuenta);
         	$this->load->view('BACK/DetalleMovimiento_view',$data);
 
@@ -58,8 +61,8 @@
 			          	//echo 'Cuenta:'.$Cuenta.' Usuario:'.$IdUS.'<br>';  
 			            
 
-			            echo $IdDB.'-'.$SaldoLA.'-'.$MDIDP.'-'.$MDINC.'-'.$MDECHK.'-'.$MDIEND.'-'.$SaldoLF.'-'.$CHKF.'-'.$SaldoB.'-'.$DPD.'-'.$SaldoR.'<br>';
-			            //$OK         = $this->bancos_modal->Guardar($IdDB,$SaldoLA,$FechaSLA,$MDIDP,$MDINC,$MDECHK,$MDIEND,$SaldoLF,$CHKF,$SaldoB,$DPD,$SaldoR,$FechaM,$IdUS);
+			            //echo $IdDB.'-'.$SaldoLA.'-'.$MDIDP.'-'.$MDINC.'-'.$MDECHK.'-'.$MDIEND.'-'.$SaldoLF.'-'.$CHKF.'-'.$SaldoB.'-'.$DPD.'-'.$SaldoR.'<br>';
+			            $OK         = $this->bancos_modal->Guardar($IdDB,$SaldoLA,$FechaSLA,$MDIDP,$MDINC,$MDECHK,$MDIEND,$SaldoLF,$CHKF,$SaldoB,$DPD,$SaldoR,$FechaM,$IdUS);
 				}
 				
 			}
@@ -92,12 +95,10 @@
 								$Nombre		 	= utf8_decode($data->sheets[$R]['cells'][$X][4]);
 								$Concepto		= $data->sheets[$R]['cells'][$X][5];								
 								$Monto		 	= number_format($data->sheets[$R]['cells'][$X][6],2, '.', '');
-								//$Monto		 = $data->sheets[$R]['cells'][$X][6];
-
-								echo $Fecha.'_'.$nDocumento.'_'.$Nombre.'_'.$Concepto.'_'.$Monto.'_'.$Tipo.'<br>';
+								
 								
 
-								//$ready         = $this->bancos_modal->GuardarDestalle($IdCNT,$Fecha,$FechaM,$nDocumento,$Nombre,$Concepto,$Monto,$Tipo);
+								$ready         = $this->bancos_modal->GuardarDestalle($IdCNT,$Fecha,$FechaM,$nDocumento,$Nombre,$Concepto,$Monto,$Tipo);
 								
 							}							
 							
@@ -109,12 +110,9 @@
 				echo "<br>";
 			}
 
-		
-		
 			if ($OK==1) {
-               	//redirect('index.php/Bandeja');
+               	redirect('index.php/Bandeja');
             }
-	
 		}
 		public function index(){
 			$this->load->view('templates/header');
