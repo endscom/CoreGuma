@@ -24,7 +24,7 @@
 			"language": {
 		 "emptyTable": "No hay datos disponibles en la tabla",
 				 "lengthMenu": '_MENU_ ',
-				 "emptyTable": "NO SE ENCONTRO VENTAS DE ESTE ARTICULO",
+				 "emptyTable": "NO HAY DATOS EN LA TABLA",
 				 "search": '<i class=" material-icons">search</i>',
 				 "loadingRecords": "CARGANDO...",
 				 "paginate": {
