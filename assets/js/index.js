@@ -20,7 +20,21 @@
 
  	$('#tbl_detalles').DataTable();
  	$('#TblveditCuenta').DataTable();
- 	$('#TblMasterMov').DataTable();
+ 	$('#TblMasterMov').DataTable(
+			"language": {
+		 "emptyTable": "No hay datos disponibles en la tabla",
+				 "lengthMenu": '_MENU_ ',
+				 "emptyTable": "NO SE ENCONTRO VENTAS DE ESTE ARTICULO",
+				 "search": '<i class=" material-icons">search</i>',
+				 "loadingRecords": "CARGANDO...",
+				 "paginate": {
+			 "first": "Primera",
+					 "last": "Última ",
+					 "next":       "Siguiente",
+					 "previous":   "Anterior"
+		 }
+
+	 );
  	$('#tblid_vista_detalles').DataTable();
  	$('#tblid_vista_detalles_dolares').DataTable();
  	/******************/
