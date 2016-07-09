@@ -342,7 +342,9 @@ html{
 
 #ChipT{
   font-family:  'robotomedium';
+  font-size: 10PX;
   font-weight: 500;
+  display: inline-block;
 }
 
 #TblUMAD thead th
@@ -530,10 +532,11 @@ html{
 
 #Dolar 
 {
+  background: #00658E;
    font-family:  'robotoblack';
    font-size: 20px;
    font-weight: 500;
-   color: #575756;
+   color:#fff;
 }
 /*uma y umavet*/
 #Dolar2 

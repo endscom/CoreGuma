@@ -22,9 +22,7 @@
 	}
 	?>
 </div>	</div>
-<div class="row">
-	
-</div>
+
 <div class="row">
 	<div class="col s12">
 			<center><h4 id="TDispo">DISPONIBLE DE BANCO CORTE &nbsp&nbsp <?php echo substr($MTMV[0]['FechaM'], 0,10); ?></h4></center>
@@ -39,10 +37,7 @@
 		
 		</div>
             <div class="row" >
-            	
-            	
-            		<div class="col s1">
-
+            
             		<div class="col s1">
             			<?php
             			if( $_SESSION['Permiso'] ==3) 
@@ -60,7 +55,7 @@
         <br>
 		<table id="TblUMA" class=" table bordered hover  display" >
 			<thead >
-				 <tr>
+				<tr>
 				 	<td id="Cordoba2"colspan="13">C&Oacute;RDOBAS</td>					
 				</tr>
 				<tr >
@@ -81,7 +76,7 @@
 			</thead>
 			<tbody>
 				 
-				
+				 
 				<?php
 				if (!($MTMV)) {
 					$TSaldoLAC[] 	= "";
@@ -143,20 +138,20 @@
 									</td>
 
 									<td > 
-										<a href='#' ".$onclick1.">".(((number_format($key['MDINC'],2)==0.00)) ? '' : "".number_format($key['MDINC'],2))."</a>
+										<a href='#'  ".$onclick1.">".(((number_format($key['MDINC'],2)==0.00)) ? '' : "".number_format($key['MDINC'],2))."</a>
 									</td>
 
 									<td> 
-										<a href='#' ".$onclick2.">".(((number_format($key['MDECHK'],2)==0.00)) ? '' : "".number_format($key['MDECHK'],2))."</a>
+										<a href='#'  ".$onclick2.">".(((number_format($key['MDECHK'],2)==0.00)) ? '' : "".number_format($key['MDECHK'],2))."</a>
 									</td>
 
 									<td> 
-										<a href='#' ".$onclick3.">".(((number_format($key['MDIEND'],2)==0.00)) ? '' : "".number_format($key['MDIEND'],2))."</a>
+										<a href='#'  ".$onclick3.">".(((number_format($key['MDIEND'],2)==0.00)) ? '' : "".number_format($key['MDIEND'],2))."</a>
 									</td>
 
 									<td > ".(((number_format($key['SaldoLF'],2)==0.00)) ? '' : "".number_format($key['SaldoLF'],2))."</td>
 									<td>
-										<a href='#' ".$onclick4.">".(((number_format($key['CHKF'],2)==0.00)) ? '' : "".number_format($key['CHKF'],2))."</a>
+										<a href='#'  ".$onclick4.">".(((number_format($key['CHKF'],2)==0.00)) ? '' : "".number_format($key['CHKF'],2))."</a>
 									</td>
 									<td > ".(((number_format($key['SaldoB'],2)==0.00)) ? '' : "".number_format($key['SaldoB'],2))."</td>								
 									<td > ".(((number_format($key['DPD'],2)==0.00)) ? '' : "".number_format($key['DPD'],2))."</td>
@@ -246,7 +241,7 @@
 												$TDPDD[]		= $key['DPD'];
 												$TSaldoRD[]		= $key['SaldoR'];
 
-											//verificar tipo de permiso de usuario MovDetalleCnt
+												//verificar tipo de permiso de usuario MovDetalleCnt
 												if( $_SESSION['Permiso'] ==1|| $_SESSION['Permiso']==2) 
 												{
 													$onclick="onclick='detalles_view(".$key['IdDB'].",".'"'.substr($MTMV[0]['FechaM'], 0,10).'"'.",".'"DEP"'.")'";	
@@ -278,7 +273,7 @@
 														
 
 														<td  > 
-															<a href='#' ".$onclick1.">".(((number_format($key['MDINC'],2)==0.00)) ? '' : "".number_format($key['MDINC'],2))."</a>
+															<a href='#' ".$onclick1." >".(((number_format($key['MDINC'],2)==0.00)) ? '' : "".number_format($key['MDINC'],2))."</a>
 														</td>
 
 														<td >
