@@ -9,19 +9,12 @@ class Login_controller extends CI_Controller {
 
     public function index()
     {
-        /*$this->load->view('templates/header');
-		$this->load->view('FRONT/login_view');        
-		$this->load->view('templates/footer');*/
+       
         $this->load->view('header_login');
         $this->load->view('Login2');
         $this->load->view('footer_login');
-            
-        
-
     }
 
-
-    
     public function salir(){        
         $this->session->sess_destroy();
         $sessiondata = array(

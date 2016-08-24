@@ -6,17 +6,9 @@
 <footer class="page-footer " id="ColorFooter" >
 
     <div class="footer-copyright " id="ColorFooter">
-       
-           <div class="row">
-                <div class="col s3 offset-s1">
-                     © <?php echo date('Y')?> Copyright UNIMARK S.A
-                </div>
-                <div class="col s2 offset-s6">
-                     <img  src="<?php echo base_url();?>assets/img/logos-bancos1.g.png" >
-                </div>
-            </div>
-      
-        
+           <div class="center row">
+               © <?php echo date('Y')?> Copyright GCTI_GUMA
+          </div>
     </div>   
   
 </footer>

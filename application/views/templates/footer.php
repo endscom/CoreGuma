@@ -1,13 +1,9 @@
 <header></header>
 <main></main>
- 
-  <div>
-      <img id="bancImagen" src="<?php echo base_url();?>assets/img/logos-bancos.png">
-  </div>
 <footer class="page-footer " style="background-color:#00658E; color:#fff;">
         <div class="container center" >
             <div class="row text4">
-             © <?php echo date('Y')?> Copyright UNIMARK S.A                       
+             © <?php echo date('Y')?> Copyright  GCTI_GUMA                       
             </div>           
         </div>
    

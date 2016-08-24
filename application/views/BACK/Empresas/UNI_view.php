@@ -38,14 +38,14 @@
 		
 		</div>
             <div class="row" >
-           
+              
             	<div class=" col s1">
-            		<?php
-            			if( $_SESSION['Permiso'] ==3) 
-            			{ 
-            			   echo "<a onclick='generarPdf();'' id='pdf2' class='waves-effect waves-light btn' >PDF</a>";
+			        	 <?php
+			        	 if( $_SESSION['Permiso'] ==3) 
+						{
+							echo "<a onclick='generarPdf();'' id='pdf3' class='waves-effect waves-light btn' >PDF</a>";
 						}
-            		?>
+			        	 ?>
 			        	 
 			        </div>
            	        
@@ -53,10 +53,10 @@
           
         
         <br>
-		<table id="TblInnova" class=" table bordered hover  display" >
+		<table id="tblid_vista_detalles" class=" table bordered hover  display" >
 			<thead >
-				 <tr>
-				 	<td id="Cordoba4"colspan="13">C&Oacute;RDOBAS</td>					
+				<tr>
+				 	<td id="Cordoba"colspan="13">C&Oacute;RDOBAS</td>					
 				</tr>
 				<tr >
 					<th>CUENTA</th>
@@ -76,7 +76,7 @@
 			</thead>
 			<tbody>
 				 
-				
+				 
 				<?php
 				if (!($MTMV)) {
 					$TSaldoLAC[] 	= "";
@@ -105,7 +105,7 @@
 							$TDPDC[]		= $key['DPD'];
 							$TSaldoRC[]		= $key['SaldoR'];
 							
-						//verificar tipo de permiso de usuario MovDetalleCnt
+								//verificar tipo de permiso de usuario MovDetalleCnt
 												if( $_SESSION['Permiso'] ==1|| $_SESSION['Permiso']==2) 
 												{
 													$onclick="onclick='detalles_view(".$key['IdDB'].",".'"'.substr($MTMV[0]['FechaM'], 0,10).'"'.",".'"DEP"'.")'";	
@@ -166,7 +166,7 @@
 				?>
 				 
 				
-				<tr id="TCordoba2">
+				<tr id="TCordoba">
 					<td >TOTAL C&Oacute;RDOBAS</td>
 					<td></td>
 					<td></td>
@@ -183,20 +183,17 @@
 					<td ><?php echo ((number_format(array_sum($TSaldoRC),2)==0.00) ? '' : "".number_format(array_sum($TSaldoRC),2));?></td>					
 				</tr>
 				<tr>
-										
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
 					
-				</tr>
-				<td></td>
-				<td></td>
-				<td></td>
-				<tr>
-										
 					
 				</tr>
 				<tr>
-					<table id="TblInnovaD"  class="table bordered hover  display" >
+					<table id="tblid_vista_detalles_dolares"  class="table bordered hover  display" >
 						<thead>
-								<tr><td colspan="13" id="Dolar3">D&Oacute;LARES </td></tr>
+							<tr><td colspan="13" id="Dolar">D&Oacute;LARES </td></tr>
 							<tr>
 								<th>CUENTA</th>
 								<th>MONEDA</th>
@@ -243,7 +240,7 @@
 												$TDPDD[]		= $key['DPD'];
 												$TSaldoRD[]		= $key['SaldoR'];
 
-													//verificar tipo de permiso de usuario MovDetalleCnt
+												//verificar tipo de permiso de usuario MovDetalleCnt
 												if( $_SESSION['Permiso'] ==1|| $_SESSION['Permiso']==2) 
 												{
 													$onclick="onclick='detalles_view(".$key['IdDB'].",".'"'.substr($MTMV[0]['FechaM'], 0,10).'"'.",".'"DEP"'.")'";	
@@ -263,6 +260,7 @@
 												}
 
 
+
 												echo "
 													<tr>
 													 	<td >".$key['NCuenta']."</td>
@@ -276,7 +274,7 @@
 														
 
 														<td  > 
-															<a href='#' ".$onclick1.">".(((number_format($key['MDINC'],2)==0.00)) ? '' : "".number_format($key['MDINC'],2))."</a>
+															<a href='#' ".$onclick1." >".(((number_format($key['MDINC'],2)==0.00)) ? '' : "".number_format($key['MDINC'],2))."</a>
 														</td>
 
 														<td >
@@ -315,7 +313,7 @@
 										<td></td>
 										<td></td>
 									</tr>
-									<tr id="TblFood2">
+									<tr id="TblFood">
 									 	<td>TOTAL D&Oacute;LARES</td>
 										<td></td>
 										<td></td>					
@@ -338,7 +336,7 @@
              </form>
 			</table>
 			<div>
-				<p id="actualizar2">Última actualización: <?php echo date('d/m/Y',strtotime(substr($MTMV[0]['LastUpdate'], 0,10))); ?>
+				<p id="actualizar3">Última actualización:<?php echo date('d/m/Y',strtotime(substr($MTMV[0]['LastUpdate'], 0,10))); ?>
 				</p>
 			</div>
 	</div>

@@ -23,11 +23,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-//$config['base_url'] = 'http://165.98.75.42/COREGUMA/';
-//$config['base_url'] = 'http://localhost:8448/GUMA_DASHBOARD/';COREGUMA
-$config['base_url'] = 'http://localhost:8484/CoreGuma/';
-#$config['base_url'] ="http://".$_SERVER["HTTP_HOST"].'/COREGUMA/';
-//$config['base_url'] ="http://".$_SERVER["HTTP_HOST"].'/CoreGuma1/';
+
+$config['base_url'] ="http://".$_SERVER["HTTP_HOST"].'/CoreGuma/';
+
 
 /*
 |--------------------------------------------------------------------------

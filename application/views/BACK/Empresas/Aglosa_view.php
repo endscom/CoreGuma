@@ -25,7 +25,7 @@
 
 <div class="row">
 	<div class="col s12">
-			<center><h4 id="TDispo">DISPONIBLE DE BANCO CORTE &nbsp&nbsp <?php echo substr($MTMV[0]['FechaM'], 0,10); ?></h4></center>
+			<center><h4 id="TDispo">DISPONIBLE DE BANCO CORTE &nbsp&nbsp <?php echo date('d/m/Y',strtotime(substr($MTMV[0]['FechaM'], 0,10))); ?></h4></center>
 			<br>
         <div id="ec_pdf">
                 <form id="frmPDF" name="frmPDF" action="<?php echo base_url();?>index.php/pdf" target="_blank" method="post">
@@ -167,7 +167,7 @@
 				 
 				
 				<tr id="TCordoba3">
-					<td >TOTAL CORDOBAS</td>
+					<td >TOTAL C&Oacute;RDOBAS</td>
 					<td></td>
 					<td></td>
 					<td ><?php echo ((number_format(array_sum($TSaldoLAC),2)==0.00) ? '' : "".number_format(array_sum($TSaldoLAC),2));?></td>
@@ -266,7 +266,7 @@
 													 	<td >".$key['NCuenta']."</td>
 														<td>".$key['MTipo']."</td>
 														<td>".$key['Banco']."</td>
-														<td > ".(((number_format($key['SaldoLA'],2)==0.00)) ? 'a' : "$ ".number_format($key['SaldoLA'],2))."</td>
+														<td > ".(((number_format($key['SaldoLA'],2)==0.00)) ? 'a' : "".number_format($key['SaldoLA'],2))."</td>
 														<td > 
 															<a href='#' ".$onclick."> ".(((number_format($key['MDIDP'],2)==0.00)) ? '' : "".number_format($key['MDIDP'],2))."</a>
 														</td>
@@ -283,13 +283,13 @@
 														<td > 
 															<a href='#' ".$onclick3.">".(((number_format($key['MDIEND'],2)==0.00)) ? '' : "".number_format($key['MDIEND'],2))."</a>
 														</td>
-														<td > ".(((number_format($key['SaldoLF'],2)==0.00)) ? '' : "$ ".number_format($key['SaldoLF'],2))."</td>
+														<td > ".(((number_format($key['SaldoLF'],2)==0.00)) ? '' : "".number_format($key['SaldoLF'],2))."</td>
 														<td >
 															<a href='#' ".$onclick4.">".(((number_format($key['CHKF'],2)==0.00)) ? '' : "".number_format($key['CHKF'],2))."</a>
 														</td>
-														<td > ".(((number_format($key['SaldoB'],2)==0.00)) ? '' : "$ ".number_format($key['SaldoB'],2))."</td>									
+														<td > ".(((number_format($key['SaldoB'],2)==0.00)) ? '' : "".number_format($key['SaldoB'],2))."</td>
 														<td > ".(((number_format($key['DPD'],2)==0.00)) ? '' : "".number_format($key['DPD'],2))."</td>
-														<td > ".(((number_format($key['SaldoR'],2)==0.00)) ? '' : "$ ".number_format($key['SaldoR'],2))."</td>
+														<td > ".(((number_format($key['SaldoR'],2)==0.00)) ? '' : "".number_format($key['SaldoR'],2))."</td>
 													</tr>
 												";
 											}
@@ -314,19 +314,19 @@
 										<td></td>
 									</tr>
 									<tr id="TblFood3">
-									 	<td>TOTAL DOLARES</td>
+									 	<td>TOTAL D&Oacute;LARES</td>
 										<td></td>
 										<td></td>					
-										<td ><?php echo ((number_format(array_sum($TSaldoLAD),2)==0.00) ? '' : "$ ".number_format(array_sum($TSaldoLAD),2));?></td>
+										<td ><?php echo ((number_format(array_sum($TSaldoLAD),2)==0.00) ? '' : "".number_format(array_sum($TSaldoLAD),2));?></td>
 										<td ><?php echo ((number_format(array_sum($TMDIDPD),2)==0.00) ? '' : "".number_format(array_sum($TMDIDPD),2));?></td>
 										<td ><?php echo ((number_format(array_sum($TMDINCD),2)==0.00) ? '' : "".number_format(array_sum($TMDINCD),2));?></td>
 										<td ><?php echo ((number_format(array_sum($TMDECHKD),2)==0.00) ? '' : "".number_format(array_sum($TMDECHKD),2));?></td>
 										<td ><?php echo ((number_format(array_sum($TMDIENDD),2)==0.00) ? '' : "".number_format(array_sum($TMDIENDD),2));?></td>
-										<td ><?php echo ((number_format(array_sum($TSaldoLFD),2)==0.00) ? '' : "$ ".number_format(array_sum($TSaldoLFD),2));?></td>
+										<td ><?php echo ((number_format(array_sum($TSaldoLFD),2)==0.00) ? '' : "".number_format(array_sum($TSaldoLFD),2));?></td>
 										<td ><?php echo ((number_format(array_sum($TCHKFD),2)==0.00) ? '' : "".number_format(array_sum($TCHKFD),2));?></td>
-										<td ><?php echo ((number_format(array_sum($TSaldoBD),2)==0.00) ? '' : "$ ".number_format(array_sum($TSaldoBD),2));?></td>
+										<td ><?php echo ((number_format(array_sum($TSaldoBD),2)==0.00) ? '' : "".number_format(array_sum($TSaldoBD),2));?></td>
 										<td ><?php echo ((number_format(array_sum($TDPDD),2)==0.00) ? '' : "".number_format(array_sum($TDPDD),2));?></td>
-										<td ><?php echo ((number_format(array_sum($TSaldoRD),2)==0.00) ? '' : "$ ".number_format(array_sum($TSaldoRD),2));?></td>
+										<td ><?php echo ((number_format(array_sum($TSaldoRD),2)==0.00) ? '' : "".number_format(array_sum($TSaldoRD),2));?></td>
 
 									</tr>
 						</tbody>
@@ -336,7 +336,7 @@
              </form>
 			</table>
 			<div>
-				<p id="actualizar3">Última actualización: <?php echo $MTMV[0]['LastUpdate']; ?>
+				<p id="actualizar3">Última actualización: <?php echo date('d/m/Y',strtotime(substr($MTMV[0]['LastUpdate'], 0,10))); ?>
 				</p>
 			</div>
 	</div>

@@ -6,7 +6,7 @@
  $(document).ready(function() {
     $('#TblMaster').DataTable(
     	{
-        	"aaSorting": [[ 1, "desc" ]]
+        	"aaSorting": [["desc" ]]
     	}
       
      );
@@ -21,20 +21,20 @@
  	$('#tbl_detalles').DataTable();
  	$('#TblveditCuenta').DataTable();
  	$('#TblMasterMov').DataTable(
-			"language": {
-		 "emptyTable": "No hay datos disponibles en la tabla",
-				 "lengthMenu": '_MENU_ ',
-				 "emptyTable": "NO HAY DATOS EN LA TABLA",
-				 "search": '<i class=" material-icons">search</i>',
-				 "loadingRecords": "CARGANDO...",
-				 "paginate": {
-			 "first": "Primera",
-					 "last": "Última ",
-					 "next":       "Siguiente",
-					 "previous":   "Anterior"
-		 }
+     {
+            "info":    false,
+            "lengthMenu": [[5,10,50,100,-1], [5,10,50,100,"Todo"]],
+            "language": {
+                "paginate": {
+                    "first":      "Primera",
+                    "last":       "Última ",
+                    "next":       "Siguiente",
+                    "previous":   "Anterior"
+                },
+                "lengthMenu": "MOSTRAR_MENU_"
+            }
 
-	 );
+        });
  	$('#tblid_vista_detalles').DataTable();
  	$('#tblid_vista_detalles_dolares').DataTable();
  	/******************/
@@ -49,10 +49,6 @@
 			$("#datos_a_enviar").val( $("<div>").append( $("#tblfinal").eq(0).clone()).html());
 			$("#FormularioExportacion").submit();
 		});
-
-
-
-
 } );
  
 

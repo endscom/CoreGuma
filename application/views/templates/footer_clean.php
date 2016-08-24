@@ -8,7 +8,7 @@
 </div>
     <div class="footer-copyright">
         <div class="container center">
-            © <?php echo date('Y')?> Copyright UNIMARK S.A
+            © <?php echo date('Y')?> Copyright  GCTI_GUMA
         </div>
     </div>
 </footer>

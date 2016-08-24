@@ -58,15 +58,15 @@
                         <?php
                         $mess=0;
                         switch ($definitiva) {
-                          case "ENERO":$mess=01;break;
-                          case "FEBRERO":$mess=02;break;
+                          case "ENERO":$mess=1;break;
+                          case "FEBRERO":$mess=2;break;
                           case "MARZO": $mess=3; break;
-                          case "ABRIL": $mess=04;break;
-                          case "MAYO": $mess=05;break;
-                          case "JUNIO": $mess=06; break;
-                          case "JULIO":$mess=07;break;
-                          case "AGOSTO": $mess=08; break;
-                          case "SEPTIEMBRE": $mess=09;break;
+                          case "ABRIL": $mess=4;break;
+                          case "MAYO": $mess=5;break;
+                          case "JUNIO": $mess=6; break;
+                          case "JULIO":$mess=7;break;
+                          case "AGOSTO": $mess=8; break;
+                          case "SEPTIEMBRE": $mess=9;break;
                           case "OCTUBRE":$mess=10;break;
                           case "NOVIEMBRE":$mess=11; break;
                           case "DICIEMBRE":$mess=12;break;
@@ -74,9 +74,7 @@
                                               if (!($All)) {}
                                                else {
                                                             foreach ($All as $key) {
-                                                                //echo "<td><a href=".base_url('index.php/Formatos').">".date('d/m/Y',strtotime(substr($key['FechaM'], 0,10)))."</a></td>";
-
-                                                                  if($mess==date('m',strtotime(substr($key['FechaM'], 0,10))))                                                                  //echo $mess;
+                                                                if($mess==date('m',strtotime(substr($key['FechaM'], 0,10))))
                                                                   echo "
                                                                   <tr>
 
