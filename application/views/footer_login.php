@@ -1,6 +1,6 @@
     <footer class="footer" >
         <div class="container">
-            © <?php echo date('Y')?> Copyright GCIT_GUMA
+            © <?php echo date('Y')?> Copyright GCIT GUMA
         </div>
     </footer>
     <script src="<?php echo base_url('assets/js/jquery.min2.js')?>"></script>
