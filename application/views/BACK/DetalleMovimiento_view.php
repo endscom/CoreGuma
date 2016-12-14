@@ -56,7 +56,7 @@
                                    echo "
                                     <tr>                                    
                                         <td>".$c."</td>
-                                        <td>".date("d-M-Y", strtotime($key['FechaM']))."</td>
+                                        <td>".date("d-M-Y", strtotime($key['Fecha']))."</td>
                                         <td>".$key['nDocumento']."</td>
                                         <td >".$key['Nombre']."</td>
                                         <td >".$key['Concepto']."</td>

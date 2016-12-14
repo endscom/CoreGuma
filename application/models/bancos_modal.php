@@ -45,7 +45,7 @@ class Bancos_modal extends CI_Model
      public function AllMVf($f,$emp){
         $this->db->where('IDEmp', $emp);
         $this->db->where('FechaM', $f);
-        
+        $this->db->order_by('Orden','asc');
         $query = $this->db->get('View_MTMV');        
         if($query->num_rows() <> 0){            
             // print_r($query->num_rows());
@@ -79,7 +79,9 @@ class Bancos_modal extends CI_Model
         $this->db->order_by('FechaM','desc');       
         $query = $this->db->get('view_status');        
         if($query->num_rows() <> 0){            
-            return $query->result_array();
+           return $query->result_array();
+             //print_r($query->result_array());
+
         }
         return 0;
     }
@@ -92,7 +94,7 @@ class Bancos_modal extends CI_Model
 
 
         if($query->num_rows() <> 0){            
-           //print_r($query->result_array());
+           
             return $query->result_array();
         }
         return 0;
@@ -105,6 +107,7 @@ class Bancos_modal extends CI_Model
         $query = $this->db->get('View_movimiento');
         if($query->num_rows() <> 0){            
             return $query->result_array();
+            //print_r($query->result_array());
         }
         return 0;  
         

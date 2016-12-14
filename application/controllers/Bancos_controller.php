@@ -21,7 +21,7 @@ class Bancos_controller extends CI_Controller {
     
     public function pdf(){    
        
-        $mPDF = new mPDF('utf-8','A3');
+        $mPDF = new mPDF('utf-8','Legal-L');
 
         $fecha=$_POST['fecha'];   
         $Empresas=$_POST['empresa'];    

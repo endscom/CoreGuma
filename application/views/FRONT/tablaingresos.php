@@ -25,7 +25,7 @@
               if (!($fecha)) {                              
               } else {
                 foreach ($fecha as $m) {
-
+                   
                   if ($m['Fecha']=="1") $mes="ENERO";
                   if ($m['Fecha']=="2") $mes="FEBRERO";
                   if ($m['Fecha']=="3") $mes="MARZO";
@@ -40,10 +40,10 @@
                   if ($m['Fecha']=="12") $mes="DICIEMBRE";
                   $definitiva= $mes; ?>
                   <li>
-                    <div id="Collap"class="collapsible-header "><?php echo $definitiva."&nbsp &nbsp".$m['año']?></div>
+                    <div id="Collap"class="collapsible-header"><?php echo $definitiva." ".$m['año']?></div>
 
                     <div  class="collapsible-body" id="<?php echo $contador; $contador++;?>">
-                      <table class="ingreso"  id="" >
+                      <table class="ingreso">
                         <thead >
                           <tr>
                            <th>FECHA</th>
@@ -72,9 +72,12 @@
                           case "DICIEMBRE":$mess=12;break;
                           default: /**/ break; }
                                               if (!($All)) {}
-                                               else {
+                                               else {                                              
                                                             foreach ($All as $key) {
-                                                                if($mess==date('m',strtotime(substr($key['FechaM'], 0,10))))
+                                                                //echo "<td><a href=".base_url('index.php/Formatos').">".date('d/m/Y',strtotime(substr($key['FechaM'], 0,10)))."</a></td>";
+
+                                                                 // echo date('m',strtotime(substr($key['FechaM'], 0,10)))."<br>";
+                                                                 if($mess==date('m',strtotime(substr($key['FechaM'], 0,10))) )                                                      //echo $mess;
                                                                   echo "
                                                                   <tr>
 
@@ -101,6 +104,7 @@
                                                                   </td>
                                                                   </tr>
                                                                   ";
+                                                                  //echo "<tr><td>34534543</td><td>345345</td><td>345345345</td><td>34534534</td><td>asdf334</td><td>sdafsdf</td></tr>";
 
                                                                 }
                                                               }                                                              

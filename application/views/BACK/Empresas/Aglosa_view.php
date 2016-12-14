@@ -30,7 +30,7 @@
         <div id="ec_pdf">
                 <form id="frmPDF" name="frmPDF" action="<?php echo base_url();?>index.php/pdf" target="_blank" method="post">
 					<input name="fecha" type="hidden" value="<?php echo substr($MTMV[0]['FechaM'], 0,10); ?>">
-						<input name="empresa" type="hidden" value="<?php echo $empresa['empresa']; ?>">
+						<input name="empresa" type="hidden" value="<?php echo $empresa; ?>">
                 </form>
   		</div>
 
@@ -62,16 +62,17 @@
 					<th>CUENTA</th>
 					<th>MONEDA</th>
 					<th>TIPO CUENTA Cte.</th>
-					<th>SALDO EN LIBROS AL <br><?php echo substr($MTMV[0]['FechaSLA'], 0,10); ?></th>
+					<th>SALDO EN LIBROS AL <br><?php echo date('d/m/Y',strtotime(substr($MTMV[0]['FechaSLA'], 0,10))); ?></th>
 					<th>MOV. ING. DEP</th>
 					<th>MOV. ING. NC</th>
 					<th>MOv. EGR. CHKC</th>
 					<th>MOV. EGR. ND</th>					
-					<th>SALDOS EN LIBROS AL <br><?php echo substr($MTMV[0]['FechaM'], 0,10); ?></th>
+					<th>SALDOS EN LIBROS AL <br><?php echo date('d/m/Y',strtotime(substr($MTMV[0]['FechaSLA'], 0,10)));?></th>
 					<th>CHEQUES FLOTANTES</th>
-					<th>SALDO EN BANCOS AL <br><?php echo substr($MTMV[0]['FechaM'], 0,10); ?></th>
+					<th>SALDO EN BANCOS AL <br><?php echo date('d/m/Y',strtotime(substr($MTMV[0]['FechaSLA'], 0,10))); ?></th>
 					<th>DEPOSITOS NO DISPONIBLES</th>
-					<th>DISPONIBLE REAL AL <br><?php echo substr($MTMV[0]['FechaM'], 0,10); ?></th>
+					<th>DISPONIBLE REAL AL <br><?php echo date('d/m/Y',strtotime(substr($MTMV[0]['FechaSLA'], 0,10))); ?></th>	
+
 				</tr>
 			</thead>
 			<tbody>
@@ -198,16 +199,17 @@
 								<th>CUENTA</th>
 								<th>MONEDA</th>
 								<th>TIPO CUENTA Cte.</th>
-								<th>SALDO EN LIBROS AL <br><?php echo substr($MTMV[0]['FechaSLA'], 0,10); ?></th>
+								<th>SALDO EN LIBROS AL <br><?php echo date('d/m/Y',strtotime(substr($MTMV[0]['FechaSLA'], 0,10))); ?></th>
 								<th>MOV. ING. DEP</th>
 								<th>MOV. ING. NC</th>
 								<th>MOv. EGR. CHKC</th>
 								<th>MOV. EGR. ND</th>					
-								<th>SALDOS EN LIBROS AL <br><?php echo substr($MTMV[0]['FechaM'], 0,10); ?></th>
+								<th>SALDOS EN LIBROS AL <br><?php echo date('d/m/Y',strtotime(substr($MTMV[0]['FechaSLA'], 0,10)));?></th>
 								<th>CHEQUES FLOTANTES</th>
-								<th>SALDO EN BANCOS AL <br><?php echo substr($MTMV[0]['FechaM'], 0,10); ?></th>
+								<th>SALDO EN BANCOS AL <br><?php echo date('d/m/Y',strtotime(substr($MTMV[0]['FechaSLA'], 0,10))); ?></th>
 								<th>DEPOSITOS NO DISPONIBLES</th>
-								<th>DISPONIBLE REAL AL <br><?php echo substr($MTMV[0]['FechaM'], 0,10); ?></th>	
+								<th>DISPONIBLE REAL AL <br><?php echo date('d/m/Y',strtotime(substr($MTMV[0]['FechaSLA'], 0,10))); ?></th>	
+
 							</tr>
 							
 						</thead>
@@ -266,7 +268,7 @@
 													 	<td >".$key['NCuenta']."</td>
 														<td>".$key['MTipo']."</td>
 														<td>".$key['Banco']."</td>
-														<td > ".(((number_format($key['SaldoLA'],2)==0.00)) ? 'a' : "".number_format($key['SaldoLA'],2))."</td>
+														<td > ".(((number_format($key['SaldoLA'],2)==0.00)) ? 'a' : "$ ".number_format($key['SaldoLA'],2))."</td>
 														<td > 
 															<a href='#' ".$onclick."> ".(((number_format($key['MDIDP'],2)==0.00)) ? '' : "".number_format($key['MDIDP'],2))."</a>
 														</td>
@@ -283,13 +285,13 @@
 														<td > 
 															<a href='#' ".$onclick3.">".(((number_format($key['MDIEND'],2)==0.00)) ? '' : "".number_format($key['MDIEND'],2))."</a>
 														</td>
-														<td > ".(((number_format($key['SaldoLF'],2)==0.00)) ? '' : "".number_format($key['SaldoLF'],2))."</td>
+														<td > ".(((number_format($key['SaldoLF'],2)==0.00)) ? '' : "$ ".number_format($key['SaldoLF'],2))."</td>
 														<td >
 															<a href='#' ".$onclick4.">".(((number_format($key['CHKF'],2)==0.00)) ? '' : "".number_format($key['CHKF'],2))."</a>
 														</td>
-														<td > ".(((number_format($key['SaldoB'],2)==0.00)) ? '' : "".number_format($key['SaldoB'],2))."</td>
+														<td > ".(((number_format($key['SaldoB'],2)==0.00)) ? '' : "$ ".number_format($key['SaldoB'],2))."</td>									
 														<td > ".(((number_format($key['DPD'],2)==0.00)) ? '' : "".number_format($key['DPD'],2))."</td>
-														<td > ".(((number_format($key['SaldoR'],2)==0.00)) ? '' : "".number_format($key['SaldoR'],2))."</td>
+														<td > ".(((number_format($key['SaldoR'],2)==0.00)) ? '' : "$ ".number_format($key['SaldoR'],2))."</td>
 													</tr>
 												";
 											}
