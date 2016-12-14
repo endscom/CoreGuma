@@ -51,7 +51,7 @@
                           if (!($Movimientos)) {
                             # code...
                           } else {
-                              $c=1;
+                               $c=1;
                                 foreach ($Movimientos as $key) {
                                    echo "
                                     <tr>                                    
